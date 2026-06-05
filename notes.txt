@@ -1,0 +1,27 @@
+Pipenv is a Python development tool used to automatically manage virtual environments
+and project dependencies. It combines the functionalities of pip (package installation)
+and virtualenv (environment isolation) into a single command-line interface
+
+pipenv install django
+- install file Pipfile (gives the project info similar to json file in js)
+
+
+django-admin is cmd used to view details about django commands
+django-admin startproject storefront : used to create a new directory (use if not initialized)
+django-admin startproject storefront . : create the directory using current location
+= __init__.py : defines that the folder as a package
+= settings : module used to define application settings
+= urls : define urls
+= wsgi and asgi are used for deployment
+= manage : uses django-admin config and runs
+= views : takes request and give response (also works as request handlers)
+
+django-admin runserver : requires configuration to settings file to run (gives error)
+we can use
+    = py manage.py runserver : runs the server without configuration (no error)
+
+python manage.py startapp playground : create a directory named playground with migration and other files below
+= admin.py : how the admin interface of the app
+= apps.py : where app is configured
+= models.py : define model class of the app
+= tests : where test are written
