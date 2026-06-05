@@ -3,6 +3,12 @@ __pycache__/
 *.py[codz]
 *$py.class
 
+# user defined .gitignore
+.idea/
+.venv/
+learn_django.iml
+
+
 # C extensions
 *.so
 
